@@ -48,3 +48,12 @@ https://facebook.github.io/react-native/docs/flatlist.html
         <Text>Go to List Demo</Text>
       </TouchableOpacity>
 ```
+
+### Images
+
+```
+<Image source={require('../../assets/berlin.gif')} />
+```
+### ScrollView 🔥
+
+https://facebook.github.io/react-native/docs/using-a-scrollview
