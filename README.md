@@ -31,3 +31,20 @@ https://stackoverflow.com/questions/34969858/react-native-module-appregistry-is-
 
 🔥 More FlatList props :
 https://facebook.github.io/react-native/docs/flatlist.html
+
+### Buttons w/ RN
+- Button: Very simple component for showing a button and detecting a press;
+- TouchableOpacity: highly customizable component that can detect a press on just about any kind of element.
+
+```
+      <Button
+        onPress={() => props.navigation.navigate('Components')}
+        title="Go to Components Demo"
+      />
+```
+
+```
+      <TouchableOpacity onPress={() => props.navigation.navigate('List')}>
+        <Text>Go to List Demo</Text>
+      </TouchableOpacity>
+```
