@@ -154,3 +154,6 @@ import { createStackNavigator } from 'react-navigation-stack';
 Icons Listing:
 github.com/expo/vector-icons
 https://expo.github.io/vector-icons/
+
+### External APIs
+![FETCH and AXIOS](https://i.imgur.com/fa7FoFc.png)
