@@ -2,6 +2,14 @@
 npm install expo-cli --global
 ```
 
+To generate project: 
+expo-cli (comes with default configuration)
+react-native-cli
+
+```
+npx expo-cli init food
+```
+
 ### Error 02Sep - Resolved.
 https://stackoverflow.com/questions/43604603/module-appregistry-is-not-registered-callable-module-calling-runapplication/51304124
 
@@ -118,3 +126,5 @@ const reducer = (state, action) => {
   ...StyleSheet.absoluteFillObject
 ```
   (position: absolute, top/bottom/left/right: 0)
+
+  
