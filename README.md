@@ -96,3 +96,25 @@ const reducer = (state, action) => {
 2. auto cap: characters | none | sentences | words
 3. auto correct default is true.
 4. above two are not the same format. 
+
+
+### Layout Systems
+- Box Object Model
+- Flex Box
+- Position
+
+- Little Difference in Box Object Name: marginTop, borderTopWidth, paddingTop, height, paddingBottom, borderBottomWidth, marginBottom ... margin, marginVertical, marginHorizontal, padding, padding vertical, paddingVertical, paddingHorizontal, borderWidth
+
+- FlexBox: alignItems: stretch, flex-start, center, flex-end
+
+- FlexBox: flexDirection: column, row
+- FlexBox: justifyContent: flex-start, center, flex-end, space-between, space-around
+- FlexBox Parent: alignItems | flexDirection | justifyContent;
+- FlexBox Child: alignSelf | flex
+
+- Position: relative, absolute(ignored by sigblings, still obeys some flex box rules set by parents)
+  (top / bottom / left / right)
+```
+  ...StyleSheet.absoluteFillObject
+```
+  (position: absolute, top/bottom/left/right: 0)
