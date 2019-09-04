@@ -83,3 +83,16 @@ const reducer = (state, action) => {
 ```
   const [state, dispatch] = useReducer(reducer, { red: 0, green: 0, blue: 0 });
 ```
+
+### Text Input iOS Thing
+```
+      <TextInput
+        autoCapitalize="none"
+        autoCorrect={false}
+        style={styles.inputStyle}
+      />
+```
+1. default style is nada;
+2. auto cap: characters | none | sentences | words
+3. auto correct default is true.
+4. above two are not the same format. 
