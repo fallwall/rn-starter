@@ -57,3 +57,15 @@ https://facebook.github.io/react-native/docs/flatlist.html
 ### ScrollView 🔥
 
 https://facebook.github.io/react-native/docs/using-a-scrollview
+
+### Reducer
+
+- Reducer: function that gets called with two objects;
+- Argument No.1 : objects that has all of our state in it
+  ({red: 0, green: 0, blue: 0})
+- Argument No.2 : object that describes the update we want to make.
+  (colorToChange: 'red', amount: 15})
+- We look at argument #2 and use it to decide how to change Argument #1
+- We never directly mutate Argument#1.
+- We must always return a value to be used as Argument #1.
+- useState || useReducer, never both.
