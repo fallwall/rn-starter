@@ -105,6 +105,10 @@ const reducer = (state, action) => {
 3. auto correct default is true.
 4. above two are not the same format. 
 
+```
+ onEndEditing={()=> ...}
+ ```
+
 
 ### Layout Systems
 - Box Object Model
@@ -128,3 +132,25 @@ const reducer = (state, action) => {
   (position: absolute, top/bottom/left/right: 0)
 
   
+### Navigation
+- Drawer Navigation, BottomTabNavigation, StackNavigation
+
+```
+npm i react-navigation
+```
+
+changed since v.4.0.0 release:
+must install three libraries separately
+
+```
+npx expo-cli install react-native-gesture-handler react-native-reanimated react-navigation-stack
+```
+
+```
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
+```
+
+Icons Listing:
+github.com/expo/vector-icons
+https://expo.github.io/vector-icons/
