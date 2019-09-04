@@ -157,3 +157,11 @@ https://expo.github.io/vector-icons/
 
 ### External APIs
 ![FETCH and AXIOS](https://i.imgur.com/fa7FoFc.png)
+
+### ENV
+https://stackoverflow.com/questions/48699820/how-do-i-hide-api-key-in-create-react-app
+
+
+### UseState second argument
+![usestate second argument](https://i.imgur.com/AH7oMXd.png)
+
