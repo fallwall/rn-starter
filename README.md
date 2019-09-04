@@ -69,3 +69,17 @@ https://facebook.github.io/react-native/docs/using-a-scrollview
 - We never directly mutate Argument#1.
 - We must always return a value to be used as Argument #1.
 - useState || useReducer, never both.
+
+Community Convention:
+```
+const reducer = (state, action) => {
+  ...
+}
+```
+:::action:::
+  type: string that describes the exact change operations 
+  payload: some data critical to the change operation
+
+```
+  const [state, dispatch] = useReducer(reducer, { red: 0, green: 0, blue: 0 });
+```
