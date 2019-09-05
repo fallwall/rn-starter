@@ -37,6 +37,11 @@ https://stackoverflow.com/questions/34969858/react-native-module-appregistry-is-
       />
 ```
 
+To hide Scroll Indicator:
+```
+showsHorizontalScrollIndicator={false}
+```
+
 🔥 More FlatList props :
 https://facebook.github.io/react-native/docs/flatlist.html
 
@@ -131,6 +136,15 @@ const reducer = (state, action) => {
 ```
   (position: absolute, top/bottom/left/right: 0)
 
+🔥Tricky Way to use Flexbox🔥
+```
+<View style={{ flex: 1 }}>
+...
+</View>
+```
+to effectively use screen space in same case.
+or we can just use <></>
+
   
 ### Navigation
 - Drawer Navigation, BottomTabNavigation, StackNavigation
@@ -151,9 +165,23 @@ import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 ```
 
+```
+import { withNavigation } from 'react-navigation';
+```
+```
+onPress={()=>navigation.navigate('ResultsShow')}>
+```
+```
+export default withNavigation(ResultList);
+```
+
+###Icon
+
 Icons Listing:
 github.com/expo/vector-icons
 https://expo.github.io/vector-icons/
+
+
 
 ### External APIs
 ![FETCH and AXIOS](https://i.imgur.com/fa7FoFc.png)
@@ -164,4 +192,36 @@ https://stackoverflow.com/questions/48699820/how-do-i-hide-api-key-in-create-rea
 
 ### UseState second argument
 ![usestate second argument](https://i.imgur.com/AH7oMXd.png)
+
+
+### Navigation ++
+```
+<TouchableOpacity onPress={() => navigation.navigate('ResultsShow', {id: item.id})}>
+             ...
+```
+
+```
+const ResultsShowScreen = ({ navigation }) => {
+  const id = navigation.getParam('id');
+  return (
+    <View>
+    ...
+```
+
+### FlatList ++
+```
+      <FlatList
+        data={result.photos}
+        keyExtractor={(item) => item}
+        renderItem={({ item }) => 
+          
+          <Image
+            style={styles.imageStyle}
+            source={{ uri: item }}
+          />
+        }
+      />
+```
+
+
 
